@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Контейнер под фрагменты -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_container"
+        />
+    </ScrollView>
+    <!-- кнопки для перемещения -->
+  <!--  <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/to_current_task"
+        android:text="Текущие задачи"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_finish_task"
+        android:text="Заверщенные задачи"
+        android:layout_toRightOf="@id/to_current_task"
+        android:layout_margin="10dp"
+        android:layout_above="@id/to_repeat_task"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/to_repeat_task"
+        android:text="Повторяющиеся задачи"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/to_current_task"
+        /> -->
+    <Button
+        android:id="@+id/to_current_task"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Текущие\nзадачи" />
+
+    <Button
+        android:id="@+id/to_repiters_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/to_current_task"
+        android:text="Повторя\nющиеся\nзадачи" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_finished_task"
+        android:text="Заверщенные\nзадачи"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/to_repiters_task"
+        />
+
+
+</RelativeLayout>
